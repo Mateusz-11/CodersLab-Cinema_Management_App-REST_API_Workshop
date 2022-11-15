@@ -73,19 +73,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'moviebase.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'HOST': '127.0.0.1',
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'db_rest',
-#         'USER': 'postgres',
-#         'PASSWORD': 'coderslab',
-#     }
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
