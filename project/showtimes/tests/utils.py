@@ -11,8 +11,5 @@ def random_movies():
     movies = list(Movie.objects.all())
     return sample(movies, 3)
 
-def add_screenings(cinema):
-    """Add 3 screenings for given cinema."""
-    movies = random_movies()
-    for movie in movies:
-        Screening.objects.create(cinema=cinema, movie=movie, date=faker.date_time(tzinfo=TZ))
+
+
