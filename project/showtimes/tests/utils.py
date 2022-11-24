@@ -18,3 +18,10 @@ def add_screenings(cinema):
         Screening.objects.create(cinema=cinema, movie=movie, date=faker.date_time(tzinfo=TZ))
 
 
+def fake_cinema_data():
+    """Generate fake data for cinema."""
+    return {
+        "name": faker.name(),
+        "city": faker.city(),
+    }
+
