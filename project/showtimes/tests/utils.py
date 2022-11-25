@@ -25,3 +25,6 @@ def fake_cinema_data():
         "city": faker.city(),
     }
 
+def create_fake_cinema():
+    pass
+
