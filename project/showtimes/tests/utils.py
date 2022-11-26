@@ -26,5 +26,6 @@ def fake_cinema_data():
     }
 
 def create_fake_cinema():
-    pass
+    cinema = Cinema.objects.create(**fake_cinema_data())
+    add_screenings(cinema)
 
