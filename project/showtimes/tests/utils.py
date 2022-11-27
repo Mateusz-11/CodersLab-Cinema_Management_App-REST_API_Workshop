@@ -1,7 +1,9 @@
 from random import sample
+
+from moviebase.local_settings import TIME_ZONE
 from movielist.models import Movie
 from faker import Faker
-from showtimes.models import Screening
+from showtimes.models import Screening, Cinema
 import pytz
 faker = Faker("pl_PL")
 TZ = pytz.timezone(TIME_ZONE)
@@ -26,6 +28,7 @@ def fake_cinema_data():
     }
 
 def create_fake_cinema():
+    """Create fake cinema with some screenings."""
     cinema = Cinema.objects.create(**fake_cinema_data())
     add_screenings(cinema)
 
